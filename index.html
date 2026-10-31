@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111413">
+  <meta name="description" content="管行的个人作品集。游戏玩家，也是一名热爱创造的开发者。探索低空经济、星门纪元、时空胶囊与贪吃蛇。">
+  <title>管行 GUAN XING | 玩家，也是创造者</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient-background" aria-hidden="true">
+    <video id="ambient-video" autoplay muted loop playsinline preload="metadata" tabindex="-1" poster="https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/130837c4-0244-4f37-9c61-8d801d93fd29.jpg" src="https://r2.motionsites.dev/motionsites/assets/7972579e5244.mp4"></video>
+  </div>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="管行，返回首页"><span class="brand-mark">gx<span>↗</span></span><span class="brand-name">管行<span>GUAN XING</span></span></a>
+      <nav class="desktop-nav" aria-label="主导航"><a href="#work" class="nav-link">精选作品</a><a href="#about" class="nav-link">关于我</a></nav>
+      <button class="header-play" data-play>来玩一局 <img class="icon" src="assets/icons/game-controller.svg" alt=""></button>
+      <button class="menu-toggle icon-button" aria-label="打开导航" aria-expanded="false" aria-controls="mobile-nav"><img class="icon" src="assets/icons/list.svg" alt=""></button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="手机导航" hidden><a href="#work">精选作品</a><a href="#about">关于我</a><button data-play>试玩贪吃蛇</button></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="intro-line"><span class="short-line"></span>你好，我是管行</p>
+        <h1 id="hero-title">把热爱，<br><span>玩成作品。</span></h1>
+        <p class="hero-description">热爱探索与创造。<br>热爱游戏，也热爱创造属于自己的世界。</p>
+        <a class="primary-button" href="#work">探索我的作品 <img class="icon" src="assets/icons/arrow-down.svg" alt=""></a>
+      </div>
+      <div class="hero-art" aria-label="象征创造力的立体环形装置">
+        <span class="art-word art-word-top" aria-hidden="true">PLAYER.</span>
+        <canvas id="sculpture" aria-hidden="true"></canvas>
+        <span class="art-word art-word-bottom" aria-hidden="true">CREATOR.</span>
+        <div class="art-caption"><span>好奇心，从来不设上限。</span><span class="art-symbol" aria-hidden="true">✳</span></div>
+      </div>
+    </section>
+
+    <section class="work-section container" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal"><h2 id="work-title">一些想法，<span>已经成为现实。</span></h2><p>从一场银河战争，到一封写给未来的信。这里是我的创造现场。</p></div>
+      <div class="work-toolbar reveal"><span class="collection-label">SELECTED WORKS <span>/ 04</span></span><div class="filters" role="group" aria-label="按作品类型筛选"><button class="filter active" data-filter="all" aria-pressed="true">全部作品 <sup>4</sup></button><button class="filter" data-filter="app" aria-pressed="false">应用 <sup>2</sup></button><button class="filter" data-filter="game" aria-pressed="false">游戏 <sup>2</sup></button></div></div>
+      <div class="projects-grid" id="projects-grid">
+        <article class="project-card reveal" data-category="app">
+          <button class="project-open" data-project="lowair" aria-label="查看低空经济项目详情">
+            <div class="project-cover cover-air image-slot" data-image="lowair-cover" data-alt="低空经济 App 项目封面">
+              <div class="cover-fallback"><div class="cover-title air-title">LOW<br>ALTITUDE<span>低空经济</span></div><div class="cover-orbit" aria-hidden="true"></div><span class="placeholder-label"><img class="icon" src="assets/icons/image.svg" alt="">项目封面待添加</span></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">行业应用 / 产品开发</p><h3>低空经济<span>连接天空与日常。</span></h3></div><span class="project-arrow"><img class="icon" src="assets/icons/arrow-up-right.svg" alt=""></span></div>
+          </button>
+          <p class="project-description">把无人机培训、工作、交易与社区，放进同一个平台。</p>
+          <div class="project-tags"><span>uni-app</span><span>FastAPI</span><span>AI 助手</span></div>
+        </article>
+        <article class="project-card reveal" data-category="game">
+          <button class="project-open" data-project="stargate" aria-label="查看星门纪元银河分裂项目详情">
+            <div class="project-cover cover-space image-slot" data-image="stargate-cover" data-alt="星门纪元银河分裂游戏封面">
+              <div class="cover-fallback"><div class="stargate-ring" aria-hidden="true"></div><div class="cover-title space-title">STARGATE<span>星门纪元：银河分裂</span></div><span class="placeholder-label"><img class="icon" src="assets/icons/image.svg" alt="">游戏画面待添加</span></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">策略游戏 / 世界构建</p><h3>星门纪元<span>下一回合，由我定义。</span></h3></div><span class="project-arrow"><img class="icon" src="assets/icons/arrow-up-right.svg" alt=""></span></div>
+          </button>
+          <p class="project-description">在随机银河里选择阵营，经营家园，指挥属于自己的舰队。</p>
+          <div class="project-tags"><span>Godot</span><span>策略桌游</span><span>真人对战</span></div>
+        </article>
+        <article class="project-card reveal" data-category="app">
+          <button class="project-open" data-project="capsule" aria-label="查看时空胶囊项目详情">
+            <div class="project-cover cover-capsule image-slot" data-image="capsule-cover" data-alt="时空胶囊项目封面">
+              <div class="cover-fallback"><span class="capsule-shape" aria-hidden="true"></span><div class="cover-title capsule-title">DEAR<br>FUTURE ME.<span>时空胶囊</span></div><span class="placeholder-label"><img class="icon" src="assets/icons/image.svg" alt="">项目封面待添加</span></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">生活应用 / 创意设计</p><h3>时空胶囊<span>把此刻，交给未来。</span></h3></div><span class="project-arrow"><img class="icon" src="assets/icons/arrow-up-right.svg" alt=""></span></div>
+          </button>
+          <p class="project-description">封存一个目标、一段心情，留给未来的自己慢慢打开。</p>
+          <div class="project-tags"><span>成长记录</span><span>情绪陪伴</span><span>AI 创意</span></div>
+        </article>
+        <article class="project-card reveal" data-category="game">
+          <button class="project-open" data-project="snake" aria-label="查看贪吃蛇项目详情">
+            <div class="project-cover cover-snake image-slot" data-image="snake-cover" data-alt="贪吃蛇小游戏封面">
+              <div class="cover-fallback"><div class="snake-motif" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="cover-title snake-title">JUST<br>ONE MORE.<span>贪吃蛇小游戏</span></div><span class="placeholder-label"><img class="icon" src="assets/icons/image.svg" alt="">游戏画面待添加</span></div>
+            </div>
+            <div class="project-info"><div><p class="project-type">经典重制 / 交互体验</p><h3>贪吃蛇<span>简单的规则，纯粹的快乐。</span></h3></div><span class="project-arrow"><img class="icon" src="assets/icons/arrow-up-right.svg" alt=""></span></div>
+          </button>
+          <p class="project-description">从熟悉的经典玩法出发，体验亲手做出一款游戏的快乐。</p>
+          <div class="project-tags"><span>JavaScript</span><span>经典街机</span><span>支持试玩</span></div>
+        </article>
+      </div>
+      <p class="collection-note">每一个作品，都从一句「要不试试？」开始。</p>
+    </section>
+
+    <section class="about-section container" id="about" aria-labelledby="about-title">
+      <div class="about-portrait image-slot reveal" data-image="portrait" data-alt="管行的个人照片">
+        <div class="cover-fallback"><span class="portrait-monogram" aria-hidden="true">gx.</span><span class="portrait-placeholder"><img class="icon" src="assets/icons/image.svg" alt="">个人照片待添加</span></div>
+      </div>
+      <div class="about-copy reveal"><p class="about-kicker">不止是玩家</p><h2 id="about-title">玩得认真，<br>也创造得认真。</h2><p>我是管行，喜欢创造和探索。游戏是我的爱好，也是很多灵感的起点。</p><p>我不仅喜欢挑战游戏里的关卡，也喜欢亲手设计规则、搭建世界，把脑海里的想法变成可以打开、可以体验的作品。</p><p class="about-statement">打游戏，我很在行。<br><span>做游戏，我也有自己的主场。</span></p><dl class="about-facts"><div><dt>我的学校</dt><dd>海淀外国语学校</dd></div><div><dt>我感兴趣的事</dt><dd>游戏创作 / 应用开发 / 新鲜想法</dd></div></dl></div>
+    </section>
+
+    <section class="closing container reveal"><span class="closing-symbol" aria-hidden="true">✳</span><div><h2>下一场冒险，<span>正在创造中。</span></h2><p>保持好奇，继续玩，继续做。</p></div><a class="round-link" href="#work" aria-label="再次浏览作品"><img class="icon" src="assets/icons/arrow-up-right.svg" alt=""></a></section>
+  </main>
+  <footer class="site-footer container"><a href="#home" class="footer-name">管行 <span>GUAN XING</span></a><span>© 2026 管行的个人作品集</span><a href="#home">回到顶部 ↑</a></footer>
+
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="detail-title"><div class="dialog-header"><span>作品详情</span><button class="icon-button close-dialog" aria-label="关闭作品详情"><img class="icon" src="assets/icons/x.svg" alt=""></button></div><div id="detail-content"></div></dialog>
+  <dialog id="game-dialog" class="game-dialog" aria-labelledby="game-title"><div class="dialog-header"><span>休息一下，来玩一局</span><button class="icon-button close-dialog" aria-label="关闭贪吃蛇"><img class="icon" src="assets/icons/x.svg" alt=""></button></div><div class="game-body"><div class="game-heading"><div><p>CLASSIC SNAKE</p><h2 id="game-title">贪吃蛇</h2></div><div class="game-score">得分<strong id="snake-score">0</strong></div></div><div class="game-stage"><canvas id="snake-canvas" width="480" height="480" role="img" aria-label="贪吃蛇游戏区域，使用方向键或 WASD 控制，空格暂停"></canvas><div class="game-overlay" id="game-overlay"><span id="game-status">准备好了吗？</span><p id="game-hint">吃掉食物，别撞到自己和边界。</p><button class="primary-button" id="start-game">开始游戏 <img class="icon" src="assets/icons/play.svg" alt=""></button></div></div><div class="game-actions"><span>方向键 / WASD 移动</span><button id="pause-game" class="text-button" disabled>暂停</button><button id="restart-game" class="text-button">重新开始</button></div><div class="touch-controls" role="group" aria-label="触屏方向键"><button data-direction="up" aria-label="向上">↑</button><button data-direction="left" aria-label="向左">←</button><button data-direction="down" aria-label="向下">↓</button><button data-direction="right" aria-label="向右">→</button></div><p class="game-footnote">这是为作品集制作的可玩展示版。</p><p id="game-announcement" class="sr-only" aria-live="polite"></p></div></dialog>
+</body>
+</html>

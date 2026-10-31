@@ -1,0 +1,11 @@
+把图片复制到此文件夹，命名如下：
+
+lowair-cover.jpg    低空经济封面
+stargate-cover.jpg  星门纪元封面
+capsule-cover.jpg   时空胶囊封面
+snake-cover.jpg     贪吃蛇封面
+portrait.jpg       个人照片
+
+同时支持 webp、png 和 jpeg 后缀。
+刷新页面即可显示，项目详情会自动使用相同图片。
+完整说明请查看项目根目录 README.md。
